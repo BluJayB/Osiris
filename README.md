@@ -35,5 +35,16 @@ python steg.py -r -B -o1024 -i8 -wsecret_file.jpg > extracted_data.jpg
 pyhton steg.py -s -b -o1024 -i8 -wnormal_file.jpg -hmy_secret_message.txt > secret_picture.jpg
 
 ```
+## iter.bash steganography file
+This is a bash file that does several iterations of steg.py. When using this file, the file steg.py must be in the same directory.
+Note:
+- This file should be used in a seperate sub folder/directory because it will cause a lot of clutter
+- It takes one argument, the name of the file to retrieve data from
+- If you want to change the values used for the offset and intervals, change to two lists in the file 
+
+Syntax examples
+```
+bash iter.bash filename.txt
+```
 ## Vigenere Website with a nice user interface
 [Vigenere Decoder](https://www.dcode.fr/vigenere-cipher)
